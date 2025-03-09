@@ -16,13 +16,17 @@ public class PersonHandler {
     public String whileLoop() {
         String result = "";
         // create a `counter`
+        int i = 0;
         // while `counter` is less than length of array
+        while (i < personArray.length -1) {
             // begin loop
-
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
-
+            String currentPerson = Person.toString(personArray[i]);
+            // use `counter` to identify the `current Person` in the array
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
+            result = currentPerson;
+            i++;
+        }
             // end loop
         return result;
     }
@@ -34,12 +38,13 @@ public class PersonHandler {
         // identify initial value
         // identify terminal condition
         // identify increment
-
-        // use the above clauses to declare for-loop signature
+        for (int i = 0; i < personArray.length-1; i++) {
+            // use the above clauses to declare for-loop signature
             // begin loop
-                // use `counter` to identify the `current Person` in the array
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
+            // use `counter` to identify the `current Person` in the array
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
+        }
             // end loop
 
         return result;
@@ -51,13 +56,15 @@ public class PersonHandler {
         String result = "";
         // identify array's type
         // identify array's variable-name
+        int i = 0;
 
-        // use the above discoveries to declare for-each-loop signature
+        for (int i : personArray) {
+            // use the above discoveries to declare for-each-loop signature
             // begin loop
-                // get `string Representation` of `currentPerson`
-                // append `stringRepresentation` to `result` variable
+            // get `string Representation` of `currentPerson`
+            // append `stringRepresentation` to `result` variable
             // end loop
-
+        }
         return result;
     }
 
