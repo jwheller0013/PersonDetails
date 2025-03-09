@@ -9,7 +9,7 @@ public class PersonHandler {
     public PersonHandler(Person[] personArray) {
         this.personArray = personArray;
     }
-
+    public Person person = new Person();
     // NOTICE how the comments can be used to step-by-step break down the problem into 
     // simple lines of code...
     
